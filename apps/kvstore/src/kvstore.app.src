@@ -1,0 +1,19 @@
+{application, kvstore, [
+    {description, "Key-Value Storage"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {kvstore_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        lager,
+        sasl,
+        inets
+    ]},
+    {env,[]},
+    {modules, []},
+
+    {maintainers, []},
+    {licenses, []},
+    {links, []}
+]}.
