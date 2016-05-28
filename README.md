@@ -63,3 +63,17 @@ myoldvalue
 
 In this case we use the methods GET, PUT/POST and DELETE to handle the
 information. The key will be the URI and the value the body of the request.
+
+
+TODO
+----
+
+- Change ad-hoc TCP transport to use `ranch` instead. This way is better because we can decrease the latency in very frequent requests.
+
+- Change ad-hoc HTTP transport to use `cowboy` instead (same reason as previous one).
+
+- Create workers in different processes in a pool to accept and process UDP requests. So the main process with the open port is there only to accept requests from the port to the workers and from the workers to outside.
+
+- Configure ETS table as mnesia table and provide specific functions to spread in several nodes, not only one.
+
+- Load tests to see the performance of the system.
