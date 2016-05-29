@@ -1,6 +1,9 @@
 kvstore
 =====
 
+[![Build Status](https://img.shields.io/travis/manuel-rubio/kvstore/master.svg)](https://travis-ci.org/manuel-rubio/kvstore)
+[![License: LGPL 2.1](https://img.shields.io/github/license/manuel-rubio/kvstore.svg)](https://raw.githubusercontent.com/manuel-rubio/kvstore/LICENSE)
+
 An OTP application
 
 Play
