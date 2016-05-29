@@ -2,7 +2,7 @@ kvstore
 =====
 
 [![Build Status](https://img.shields.io/travis/manuel-rubio/kvstore/master.svg)](https://travis-ci.org/manuel-rubio/kvstore)
-[![Coverage Status](https://img.shields.io/coveralls/manuel-rubio/kvstore/master.svg)](https://coveralls.io/r/manuel-rubio/kvstore)
+[![Codecov](https://img.shields.io/codecov/c/github/manuel-rubio/kvstore.svg)](https://codecov.io/gh/manuel-rubio/kvstore)
 [![License: LGPL 2.1](https://img.shields.io/github/license/manuel-rubio/kvstore.svg)](https://raw.githubusercontent.com/manuel-rubio/kvstore/LICENSE)
 
 An OTP application
