@@ -2,7 +2,7 @@ language: erlang
 script: "./rebar3 do eunit, cover"
 install: "sudo pip install codecov"
 after_success:
-- bin/covertool -cover _build/test/cover/eunit.coverdata -appname kvstore -output cobertura.xml -src apps/kvstore/src
+- ./covertool -cover _build/test/cover/eunit.coverdata -appname kvstore -output cobertura.xml -src apps/kvstore/src
 - codecov
 otp_release:
 - 18.3
