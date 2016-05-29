@@ -1,6 +1,6 @@
 language: erlang
 script: "./rebar3 do eunit, cover"
-install: "pip install codecov"
+install: "sudo pip install codecov"
 after_success: "codecov"
 otp_release:
 - 18.3
