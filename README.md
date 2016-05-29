@@ -15,6 +15,46 @@ Play
 This way you'll have a shell opened to try commands and show the logs. Then,
 you can use the following ways to access to the data:
 
+Available Commands
+------------------
+
+- **GET** `<key>`: retrieve the content for the specified *key*.
+- **PUT** `<key>` `<value>`: set the *value* for the specified *key*.
+- **POST** `<key>` `<value>`: same as **PUT** (in this system there are no difference between POST and PUT).
+- **DELETE** `<key>`: remove the specified *key*.
+- **QUIT**: close the connection (only available in TCP).
+
+In case of HTTP, the *method* is the specified command and the *key* is the URI. The first `/` will be ignored. For example:
+
+```
+GET /mykey HTTP/1.1
+Host: 127.0.0.1:5555
+
+```
+
+Is the same as the following command in TCP/UDP:
+
+```
+GET mykey
+```
+
+And the value for the PUT/POST commands is the body of the request. For example:
+
+```
+PUT /mykey HTTP/1.1
+Host: 127.0.0.1:5555
+Content-type: text/plain
+Content-length: 5
+
+hello
+```
+
+Is the same as the following command in TCP/UDP:
+
+```
+PUT mykey hello
+```
+
 TCP
 ---
 
